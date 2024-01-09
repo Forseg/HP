@@ -1,0 +1,1482 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Cajones</title>
+        <link rel="stylesheet" href="showroom/prod.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+
+        <section class="sidebar">
+            <div class="nav-header">
+                <p style="text-align: center;" class="logo">MENU</p>
+                <i class="bx bx-menu-alt-right btn-menu"></i>
+            </div>
+            <div class="theme-wrapper">
+                <i class="bx bxs-moon theme-icon"></i>
+                <button id="dark-theme-button" class="theme-btn">Color</button>
+            </div>
+            <ul class="nav-links">
+                <li data-category="todos"><a href="#">Todos</a></li>
+                <li data-category="guantes"><a href="#">Guantes</a></li>
+                <li data-category="mascarilla"><a href="#">Mascarillas</a></li>
+                <li data-category="lentes"><a href="#">Lentes</a></li>
+                <li data-category="chalecos"><a href="#">Chalecos</a></li>
+                <li data-category="varas"><a href="#">Varas luminosas</a></li>
+                <li data-category="lamparas"><a href="#">Lampara Mineras</a></li>
+                <li data-category="cintas"><a href="#">Cintas Seguridad</a></li>
+                <li data-category="viniles"><a href="#">Viniles</a></li>
+                <li data-category="caretas"><a href="#">Caretas</a></li>
+                <li data-category="adicionales"><a href="#">Productos adicionales</a></li><br>
+            </ul>
+        </section>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-custom-orange">
+
+
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">HP</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="about.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Cotizar</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Comprar por
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="showroom.html">Cajones</a></li>
+                                    <li><a class="dropdown-item" href="lote.html">Docenas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img onclick="showCart(this)" class="cart" src="img-hp2/carritooo.gif" alt="">
+                    <p class="count-product">0</p>
+                </div>
+            </nav>
+        </header>
+
+
+          <div class="cart-products" id="products-id">
+            <p class="close-btn" onclick="closeBtn()">X</p>
+            <h3>Mi carrito</h3>
+            <div class="card-items">
+            </div>
+            <h2>Total: S/.<strong class="price-total">0.00</strong></h2>
+            <button onclick="finalizarPedido()" class="finalizar-btn">Finalizar Pedido</button>
+        </div>
+
+        <section class="container">
+            <div class="products">
+                <!--TIENDA GUANTES HP-->
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guante-bazefire.jpeg" alt="">
+                        <p>S/.<span>8.80</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE DE CUERO ROJO PARA SOLDAR BLAZEFIRE 14" 2020 2020 <br><br>           
+                        <span class="product-code">HPI-6R-14</span>
+                      </p>
+                    <a href="#" data-id="1" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp3/guanate plomo.jpg" alt="">
+                        <p>S/.<span>2.15</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE ANTICORTE NYLON PLOMO PU PLOMO PLUREMAX T8 NM <br><br>          
+                        <span class="product-code">35-8PPQ</span>
+                      </p>
+                    <a href="#" data-id="2" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp3/guanate plomo.jpg" alt="">
+                        <p>S/.<span>2.15</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE ANTICORTE NYLON PLOMO PU PLOMO PLUREMAX T9 NM <br><br>    
+                        <span class="product-code">35-9PPQ</span>
+                      </p>
+                    <a href="#" data-id="3" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp3/guante blanco.jpeg" alt="">
+                        <p>S/.<span>8.08</span></p>
+                    </div><br><br>
+                    <p class="title">
+                        GUANTE DE BADANA BLANCO CON RIBETE <br><br>                   
+                        <span class="product-code">198-3B</span>
+                      </p>
+                    <a href="#" data-id="4" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guante_palma.jpeg" alt="">
+                        <p>S/.<span>2.69</span></p>
+                    </div>
+                    <p class="title"><br><br>
+                        GUANTE ANTICORTE CALIBRE 10 AMARILLO <br><br>                   
+                        <span class="product-code">2242-GY-9</span>
+                      </p>
+                    <a href="#" data-id="5" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp3/guante cuero.jpeg" alt="">
+                        <p>S/.<span>5.15</span></p>
+                    </div>
+                    <p class="title"><br><br>
+                        GUANTE DE LATEX RUGOSO GOLDEN GRAB-IT T10 16-347 <br><br>   
+                        <span class="product-code">16-347/10</span>
+                      </p>
+                    <a href="#" data-id="6" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp3/guante max.jpg" alt="">
+                        <p>S/.<span>3.84</span></p>
+                    </div>
+                    <p class="title"><br>
+                        GUANTE DE TRABAJO LIVIANO FORRO NITRILO NEGRO NITRONMAX T8 NM <br><br>            
+                        <span class="product-code">1530-8</span>
+                      </p>
+                    <a href="#" data-id="7" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guante verde.jpeg" alt="">
+                        <p>S/.<span>3.84</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE FULL NITRILO NITRIMAX 13" T7 NM <br><br>               
+                        <span class="product-code">7S11-205</span>
+                      </p>
+                    <a href="#" data-id="8" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guante verde.jpeg" alt="">
+                        <p>S/.<span>4.31</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE FULL NITRILO NITRIMAX 13" T9 NM <br><br>    
+                        <span class="product-code">9S11-205</span>
+                      </p>
+                    <a href="#" data-id="9" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guante_estanque.jpeg" alt="">
+                        <p>S/.<span>10.11</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE DE PVC AZUL LONG 55CM <br><br> 
+                        <span class="product-code">55-AN</span>
+                      </p>
+                    <a href="#" data-id="10" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp3/guante funcional.jpeg" alt="">
+                        <p>S/.<span>2.09</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE ANTICORTE PLOMO WORKFLEX THIN NEOPRENO PLOMO T7 <br><br>  
+                        <span class="product-code">35-7PPQ</span>
+                      </p>
+                    <a href="#" data-id="11" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes"><br>
+                    <div>
+                        <img src="img-hp5/guantes anticorte.jpeg" alt="">
+                        <p>S/.<span>1.74</span></p>
+                    </div><br><br><br>
+                    <p class="title">
+                        GUANTE ANTICORTE NEGRO WORKFLEX PU NEGRO T8 <br><br> 
+                        <span class="product-code">35-2NG8</span>
+                      </p>
+                    <a href="#" data-id="12" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guantes anticorte.jpeg" alt="">
+                        <p>S/.<span>1.74</span></p>
+                    </div><br><br><br>
+                    <p class="title">
+                        GUANTE ANTICORTE NEGRO WORKFLEX PU NEGRO T9 <br><br>   
+                        <span class="product-code">35-2NG9</span>
+                      </p>
+                    <a href="#" data-id="13" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp4/moder.jpeg" alt="">
+                        <p>S/.<span>2.09</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE ANTICORTE NEGRO WORKFLEX THIN NEOPRENO NEGRO T7 HI <br><br> 
+                        <span class="product-code">35-7NNQ</span>
+                      </p>
+                    <a href="#" data-id="14" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp4/moder.jpeg" alt="">
+                        <p>S/.<span>2.15</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE ANTICORTE NEGRO WORKFLEX THIN NEOPRENO NEGRO T8  HI <br><br>     
+                        <span class="product-code">35-8NNQ</span>
+                      </p>
+                    <a href="#" data-id="15" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guante_neopreno.jpeg" alt="">
+                        <p>S/.<span>2.15</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE ANTICORTE NYLON NEGRO PU NEGRO PLUREMAX T9 NM <br><br>                  
+                        <span class="product-code">35-9NNQ</span>
+                      </p>
+                    <a href="#" data-id="16" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guante-anticorte.png" alt="">
+                        <p>S/.<span>1.74</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE ANTICORTE PLOMO WORKFLEX PU PLOMO T7 <br><br>  
+                        <span class="product-code">35-2PP7</span>
+                      </p>
+                    <a href="#" data-id="17" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guante-anticorte.png" alt="">
+                        <p>S/.<span>1.74</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE ANTICORTE PLOMO WORKFLEX PU PLOMO T8 <br><br>          
+                        <span class="product-code">35-2PP8</span>
+                      </p>
+                    <a href="#" data-id="18" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp3/guante max.jpg" alt="">
+                        <p>S/.<span>3.84</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE DE TRABAJO LIVIANO FORRO NITRILO NEGRO NITRONMAX T8 NM <br><br>  
+                        <span class="product-code">1530-8</span>
+                      </p>
+                    <a href="#" data-id="19" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp6/guantes_latex.jpeg" alt="">
+                        <p>S/.<span>4.31</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE DE LATEX NEGRO CALIBRE 25 105G TALLA M <br><br> 
+                        <span class="product-code">C25-M</span>
+                      </p>
+                    <a href="#" data-id="20" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guante-chemicla.jpg" alt="">
+                        <p>S/.<span>4.62</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE DE JEBE INDUSTRIAL C25 TLL <br><br> 
+                        <span class="product-code">C25-L</span>
+                      </p>
+                    <a href="#" data-id="21" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guante-chemicla.jpg" alt="">
+                        <p>S/.<span>11.98</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE DE JEBE INDUSTRIAL C35 TM <br><br> 
+                        <span class="product-code">C35-M</span>
+                      </p>
+                    <a href="#" data-id="22" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guante neo.jpeg" alt="">
+                        <p>S/.<span>5.38</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE DE PVC FORRO/LANA NEGRO NEOPLUS 45CM <br><br> 
+                        <span class="product-code">32-2</span>
+                      </p>
+                    <a href="#" data-id="23" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp5/guantes naranja.jpg" alt="">
+                        <p>S/.<span>4.72</span></p>
+                    </div>
+                    <p class="title">
+                        GUANTE ANTICORTE NARANJA HARDFLEX LATEX NEGRO COMPLETO <br><br> 
+                        <span class="product-code">35-NN</span>
+                      </p>
+                    <a href="#" data-id="24" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="guantes">
+                    <div>
+                        <img src="img-hp3/gon.jpg" alt="">
+                        <p>S/.<span>5.92</span></p>
+                    </div><br><br>
+                    <p class="title">
+                        GUANTES DE GOMA CON RASTRILLO DE COLORES VARIOS <br><br>  
+                        <span class="product-code">GLOV-1</span>
+                      </p>
+                    <a href="#" data-id="25" class="btn-add-cart">agregar al carrito</a>
+                </div>
+    
+                <!--TIENDA MASCARILLAS HP-->
+                <div class="carts" data-category="mascarilla">
+                    <div>
+                        <img src="img-hp2/mascara 2 vias.png" alt="">
+                        <p>S/.<span>21.00</span></p>
+                    </div>
+                    <p class="title">
+                        MASCARA MULTIFUNCION 2 VIAS 7500 / MASCARA S/FILTRO <br><br>        
+                        <span class="product-code">26-2G-2-SF</span>
+                      </p>
+                    <a href="#" data-id="26" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="mascarilla">
+                    <div>
+                        <img src="img-hp3/mascarillaa.jpeg" alt="">
+                        <p>S/.<span>14.00</span></p>
+                    </div>
+                    <p class="title">
+                        MASCARA MULTIFUNCION CAUCHO 2 VIAS SIN FILTRO <br><br> 
+                        <span class="product-code">26-2G-1-SF</span>
+                      </p>
+                    <a href="#" data-id="27" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="mascarilla">
+                    <div>
+                        <img src="img-hp2/mascara 6200.png" alt="">
+                        <p>S/.<span>22.97</span></p>
+                    </div>
+                    <p class="title">
+                        MASCARA MULTIFUNCION CAUCHO 2 VIAS 8-F2 <br><br> 
+                        <span class="product-code">CA-1</span>
+                      </p>
+                    <a href="#" data-id="28" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="mascarilla">
+                    <div>
+                        <img src="img-hp3/mascarilla con valvula.png" alt="">
+                        <p>S/.<span>0.66</span></p>
+                    </div>
+                    <p class="title">
+                        MASCARA BLANCA N95 CON VALVULA CERTIFICADA <br><br>   
+                        <span class="product-code">44151AP</span>
+                      </p>
+                    <a href="#" data-id="29" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="mascarilla">
+                    <div>
+                        <img src="img-hp3/mascarilla-blanca.png" alt="">
+                        <p>S/.<span>0.66</span></p>
+                    </div>
+                    <p class="title">
+                        RESPIRADOR ANTI PARTICULAS REFORZADO SIN VÁLVULA CERTIFICADO NIOSH N95 BLANCO 44150 <br><br> 
+                        <span class="product-code">44150AP</span>
+                      </p>
+                    <a href="#" data-id="30" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="mascarilla">
+                    <div>
+                        <img src="img-hp2/8-F2.png" alt="">
+                        <p>S/.<span>20.88</span></p>
+                    </div>
+                    <p class="title">
+                        RETENEDOR COMPATIBBLE 501AD PARA FILTROS 5N11 Y 5P71 <br><br> 
+                        <span class="product-code">7003</span>
+                      </p>
+                    <a href="#" data-id="31" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="mascarilla">
+                    <div>
+                        <img src="img-hp2/8-F2.png" alt="">
+                        <p>S/.<span>18.31</span></p>
+                    </div>
+                    <p class="title">
+                        FILTRO CARBON ACTIVO ANTI-PARTICULAS Y VAPOR ORGANICO COMPATIBLE 7600 ADVANCED <br><br> 
+                        <span class="product-code">7001</span>
+                      </p>
+                    <a href="#" data-id="32" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="mascarilla">
+                    <div>
+                        <img src="img-hp7/retenedores-1.jpg" alt="">
+                        <p>S/.<span>1.10</span></p>
+                    </div>
+                    <p class="title">
+                        PRE-FITROS Y RETENEDOR PARA PARTICULAS / PARA CARTUCHOS 6003 <br><br>  
+                        <span class="product-code">501-AD</span>
+                      </p>
+                    <a href="#" data-id="33" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="mascarilla">
+                    <div>
+                        <img src="img-hp7/retenedor.jpg" alt="">
+                        <p>S/.<span>1.49</span></p>
+                    </div><br><br><br>
+                    <p class="title">
+                        FILTRO PARA PARTICULAS COMPATIBLE GA5N11 <br><br>  
+                        <span class="product-code">5N-11</span>
+                      </p>
+                    <a href="#" data-id="34" class="btn-add-cart">agregar al carrito</a>
+                </div>
+    
+                <!--TIENDA LENTES HP-->
+                <div class="carts" data-category="lentes">
+                    <div>
+                        <img src="img-hp6/lenete.jpg" alt="">
+                        <p>S/.<span>2.09</span></p>
+                    </div>
+                    <p class="title">
+                        LENTE CLARO ANTIEMPAÑANTE FILO NEGRO <br><br> 
+                        <span class="product-code">19-CA</span>
+                      </p>
+                    <a href="#" data-id="35" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="lentes">
+                    <div>
+                        <img src="img-hp6/lentes-antiempañamiento.webp" alt="">
+                        <p>S/.<span>1.30</span></p>
+                    </div>
+                    <p class="title">
+                        LENTES DE SEGURIDAD ANTI EMPAÑANTES LUNA OSCURA <br><br>  
+                        <span class="product-code">19-0</span>
+                      </p>
+                    <a href="#" data-id="36" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="lentes">
+                    <div>
+                        <img src="img-hp6/lente-certificado.png" alt="">
+                        <p>S/.<span>2.09</span></p>
+                    </div>
+                    <p class="title">
+                        LENTE CLARO FILO NEGRO CERTIFICADOS <br><br> 
+                        <span class="product-code">19-CA-N</span>
+                      </p>
+                    <a href="#" data-id="37" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="lentes">
+                    <div>
+                        <img src="img-hp6/lente spy claro.png" alt="">
+                        <p>S/.<span>2.09</span></p>
+                    </div>
+                    <p class="title">
+                        LENTE CLARO SPY ANTIEMPAÑANTE <br><br> 
+                        <span class="product-code">20-4TA</span>
+                      </p>
+                    <a href="#" data-id="38" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="lentes">
+                    <div>
+                        <img src="img-hp7/SOLAR.jpg" alt="">
+                        <p>S/.<span>22.62</span></p>
+                    </div>
+                    <p class="title">
+                        LENTE DE SOLDAR AUTOMATICO <br><br>  
+                        <span class="product-code">15-TB</span>
+                      </p>
+                    <a href="#" data-id="39" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="lentes">
+                    <div>
+                        <img src="img-hp6/lenhp.jpg" alt="">
+                        <p>S/.<span>3.30</span></p>
+                    </div>
+                    <p class="title"><br>
+                        LENTE GOOGLE CLARO ANTIFOG <br><br> 
+                        <span class="product-code">GOG-1</span>
+                      </p>
+                    <a href="#" data-id="39" class="btn-add-cart">agregar al carrito</a>
+                </div>
+    
+                <!--TIENDA CHALECOS HP-->
+                <div class="carts" data-category="chalecos">
+                    <div>
+                        <img src="img-hp4/chaleco nylon2.png" alt="">
+                        <p>S/.<span>3.46</span></p>
+                    </div>
+                    <p class="title">
+                        CHALECO DE SEGURIDAD VERDE NYLON 2 BANDAS REFLECTIVAS 120G <br><br> 
+                        <span class="product-code">120-CHV</span>
+                      </p>
+                    <a href="#" data-id="40" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="chalecos">
+                    <div>
+                        <img src="img-hp4/chalecoos.webp" alt="">
+                        <p>S/.<span>2.04</span></p>
+                    </div>
+                    <p class="title">
+                        CHALECO DE SEGURIDAD VERDE NYLON 2 BANDAS REFLECTIVAS 60G <br><br> 
+                        <span class="product-code">60-V</span>
+                      </p>
+                    <a href="#" data-id="41" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="chalecos">
+                    <div>
+                        <img src="img-hp4/chaleco nylon2banda.png" alt="">
+                        <p>S/.<span>3.23</span></p>
+                    </div>
+                    <p class="title">
+                        CHALECO DE SEGURIDAD VERDE NYLON 4 BANDAS REFLECTIVAS 60G <br><br> 
+                        <span class="product-code">60-V4</span>
+                      </p>
+                    <a href="#" data-id="42" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="chalecos">
+                    <div>
+                        <img src="img-hp4/chalecos de seguridad.jpeg" alt="">
+                        <p>S/.<span>3.30</span></p>
+                    </div>
+                    <p class="title">
+                        LENTE GOOGLE CLARO ANTIFOG <br><br> 
+                        <span class="product-code">GOG-1</span>
+                      </p>
+                    <a href="#" data-id="43" class="btn-add-cart">agregar al carrito</a>
+                </div>
+               
+                <!--TIENDA VARAS LUMINOSAS HP-->
+                <div class="carts" data-category="varas">
+                    <div>
+                        <img src="img-hp2/bdmax.jpg" alt="">
+                        <p>S/.<span>8.62</span></p>
+                    </div>
+                    <p class="title">
+                        VARA LUMINOSA BICOLOR ROJO - AMBAR A PILAS <br><br>         
+                        <span class="product-code">42-WY</span>
+                      </p>
+                    <a href="#" data-id="44" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="varas">
+                    <div>
+                        <img src="img-hp2/bdmax.jpg" alt="">
+                        <p>S/.<span>10.77</span></p>
+                    </div>
+                    <p class="title">
+                        VARA LUMINOSA BICOLOR ROJO - VERDE A PILAS <br><br>         
+                        <span class="product-code">42-W</span>
+                      </p>
+                    <a href="#" data-id="45" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="varas">
+                    <div>
+                        <img src="img-hp7/vara luminosa.jpeg" alt="">
+                        <p>S/.<span>9.01</span></p>
+                    </div>
+                    <p class="title">
+                        VARA LUMINOSA ROJA A PILAS <br><br>      
+                        <span class="product-code">42-R</span>
+                      </p>
+                    <a href="#" data-id="46" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="varas">
+                    <div>
+                        <img src="img-hp7/vara luminosa.jpeg" alt="">
+                        <p>S/.<span>23.69</span></p>
+                    </div>
+                    <p class="title">
+                        VARA-LUMINOSA-ROJO RECARGABLE <br><br>       
+                        <span class="product-code">42-RC</span>
+                      </p>
+                    <a href="#" data-id="47" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="varas">
+                    <div>
+                        <img src="img-hp/varaamarillo.jpeg" alt="">
+                        <p>S/.<span>10.88</span></p>
+                    </div>
+                    <p class="title">
+                        BARRA RETRACTIL AMARILLO/NEGRO 2.10M GRUESA <br><br>     
+                        <span class="product-code">VARA-RETC</span>
+                      </p>
+                    <a href="#" data-id="48" class="btn-add-cart">agregar al carrito</a>
+                </div>
+    
+                <!--TIENDA LAMPARAS MINERAS HP-->
+                <div class="carts" data-category="lamparas">
+                    <div>
+                        <img src="img-hp6/lampara-amar.png" alt="">
+                        <p>S/.<span>61.38</span></p>
+                    </div>
+                    <p class="title">
+                        LAMPARA MINERA ASTRALUX LED SMA RECARGABLE ASKL2M <br><br>   
+                        <span class="product-code">82-2II</span>
+                      </p>
+                    <a href="#" data-id="49" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="lamparas">
+                    <div>
+                        <img src="img-hp6/lampara-min.png" alt="">
+                        <p>S/.<span>91.54</span></p>
+                    </div>
+                    <p class="title">
+                        LAMPARA MINERA ASTRALUX LED SMA RECARGABLE ASKL5M <br><br>
+                        <span class="product-code">82-5II</span>
+                      </p>
+                    <a href="#" data-id="50" class="btn-add-cart">agregar al carrito</a>
+                </div>
+    
+                <!--TIENDA CINTA DE SEGURIDAD HP-->
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp4/CINTA.png" alt="">
+                        <p>S/.<span>29.08</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA ANTIDESLIZANTE 2 18MTS AMARILLA <br><br>
+                        <span class="product-code">P-5B-A</span>
+                      </p>
+                    <a href="#" data-id="51" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp4/CINTA.png" alt="">
+                        <p>S/.<span>8.08</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA ANTIDESLIZANTE 2 5MTS AMARILLA    <br><br>
+                        <span class="product-code">P-5-5A</span>
+                      </p>
+                    <a href="#" data-id="52" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp5/cinta-negro.png" alt="">
+                        <p>S/.<span>29.08</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA ANTIDESLIZANTE 2 18MTS NEGRA   <br><br>
+                        <span class="product-code">P-5B-N</span>
+                      </p>
+                    <a href="#" data-id="53" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp4/cinta-colores.png" alt="">
+                        <p>S/.<span>21.86</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA DE SEÑALIZACION 2 50MTS GRADO INGENIERIA AMARILLO/NEG   <br><br>
+                        <span class="product-code">5P</span>
+                      </p>
+                    <a href="#" data-id="54" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp4/cinta5b.png" alt="">
+                        <p>S/.<span>71.43</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA ANTIDESLIZANTE 2 18MTS NEGRA LINEA   <br><br>
+                        <span class="product-code">P-5B-1</span>
+                      </p>
+                    <a href="#" data-id="55" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp4/cinta5pa.png" alt="">
+                        <p>S/.<span>5.60</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA DE SEÑALIZACION AMARRILLA/NEGRO 2 20 MTS   <br><br>
+                        <span class="product-code">5P-20</span>
+                      </p>
+                    <a href="#" data-id="56" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp4/cinta5pa.png" alt="">
+                        <p>S/.<span>9.69</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA SEÑALIZACION AMARILLA/NEGRO 2" 33MT  <br><br>
+                        <span class="product-code">5P-33</span>
+                      </p>
+                    <a href="#" data-id="57" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp4/cinta5p.png" alt="">
+                        <p>S/.<span>5.60</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA DE SEÑALIZACION AMARRILLA 2 20 MTS  <br><br>
+                        <span class="product-code">5P-20A</span>
+                      </p>
+                    <a href="#" data-id="58" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp4/cinta20a.png" alt="">
+                        <p>S/.<span>18.57</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA DE SEÑALIZACION 2 50MTS GRADO INGENIERIA AMARILLO  <br><br>
+                        <span class="product-code">5P-A</span>
+                      </p>
+                    <a href="#" data-id="59" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp4/cinta227.jpg" alt="">
+                        <p>S/.<span>13.68</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA DOBLE CONTACTO 33MTS  <br><br>
+                        <span class="product-code">227-33</span>
+                      </p>
+                    <a href="#" data-id="60" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp4/cinta hp naranja.jpg" alt="">
+                        <p>S/.<span>42.86</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA MIXTA NARANJA 2 100 MTS TELA  <br><br>
+                        <span class="product-code">5Y-N</span>
+                      </p>
+                    <a href="#" data-id="61" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp/verdegey.jpg" alt="">
+                        <p>S/.<span>42.86</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA MIXTA VERDE 2 100 MTS TELA  <br><br>
+                        <span class="product-code">5Y-V</span>
+                      </p>
+                    <a href="#" data-id="62" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp2/amarilis.jpeg" alt="">
+                        <p>S/.<span>42.86</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA MIXTA VERDE LIMÓN ALTERNATIVA 2 100 MTS TELA  <br><br>
+                        <span class="product-code">5Y-5VS</span>
+                      </p>
+                    <a href="#" data-id="63" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp4/naranjis.jpeg" alt="">
+                        <p>S/.<span>115.38</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA REFLECTIVA AMBAR SELLADA CON LINEAS Y LOGO 10 CM X 45.7  <br><br>
+                        <span class="product-code">5D-4CHA</span>
+                      </p>
+                    <a href="#" data-id="64" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp7/rojisis.jpeg" alt="">
+                        <p>S/.<span>131.87</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA REFLECTIVA ROJO SELLADA CON LINEAS Y LOGO 10 CM X 45.7  <br><br>
+                        <span class="product-code">5D-4CHR</span>
+                      </p>
+                    <a href="#" data-id="65" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp/verjis.jpeg" alt="">
+                        <p>S/.<span>82.82</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA REFLECTIVA VERDE OSCURO CON LINEAS 2 45.7 MTS  <br><br>
+                        <span class="product-code">5D-CHVRI</span>
+                      </p>
+                    <a href="#" data-id="66" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp/verjis.jpeg" alt="">
+                        <p>S/.<span>269.23</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA REFLECTIVA VERDE GRADO DIAMANTE PC EGP 4" 45 MTS  <br><br>
+                        <span class="product-code">5D-4CHVRIC</span>
+                      </p>
+                    <a href="#" data-id="67" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp/verjis.jpeg" alt="">
+                        <p>S/.<span>195.00</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA REFLECTIVA VERDE GRADO DIAMANTE PC EGP 2" 45 MTS  <br><br>
+                        <span class="product-code">5D-CHVRIC</span>
+                      </p>
+                    <a href="#" data-id="68" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp/verjis.jpeg" alt="">
+                        <p>S/.<span>129.23</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA REFLECTIVA VERDE OSCURO GRADO DIAMANTE PC EGP 10CM X 45.7MT CORTADA  <br><br>
+                        <span class="product-code">5D-4PEGP-VRC</span>
+                      </p>
+                    <a href="#" data-id="69" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp5/coloris.jpeg" alt="">
+                        <p>S/.<span>131.87</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA REFLECTIVA ROJO/BLANCO SELLADA CON LINEAS Y LOGO 4 45  <br><br>
+                        <span class="product-code">5D-4CHRB</span>
+                      </p>
+                    <a href="#" data-id="70" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp5/cintatextil.jpg" alt="">
+                        <p>S/.<span>97.26</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA REFLECTIVA TEXTIL PLOMA DE 2 100MTS ALTERNATIVA  <br><br>
+                        <span class="product-code">5A-5A-A</span>
+                      </p>
+                    <a href="#" data-id="71" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp5/cintatextil.jpg" alt="">
+                        <p>S/.<span>130.77</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA REFLECTIVA TEXTIL PLOMA DE 2" 100MTS REFLECTANCIA 420CD/LUX/M2  <br><br>
+                        <span class="product-code">5A-5A-T</span>
+                      </p>
+                    <a href="#" data-id="72" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp5/cintatextil.jpg" alt="">
+                        <p>S/.<span>75.83</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA REFLECTIVA TEXTIL PLOMA DE 2" 100MTS REFLECTANCIA 420CD/LUX/M2  <br><br>
+                        <span class="product-code">5A-5T</span>
+                      </p>
+                    <a href="#" data-id="73" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="cintas">
+                    <div>
+                        <img src="img-hp4/cinta amarillo hp.webp" alt="">
+                        <p>S/.<span>131.87</span></p>
+                    </div>
+                    <p class="title">
+                        CINTA REFLECTIVA VERDE LIMON SELLADA CON LINEAS 4" 45  <br><br>
+                        <span class="product-code">5D-4CHVI</span>
+                      </p>
+                    <a href="#" data-id="74" class="btn-add-cart">agregar al carrito</a>
+                </div>
+    
+                <!--TIENDA VINILES HP-->
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp2/azuls.jpg" alt="">
+                        <p>S/.<span>290.80</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL REFLECTIVO AZUL 61CM X 45.7 MTS GRADO INGENIERIA  <br><br>
+                        <span class="product-code">61-45AZ</span>
+                      </p>
+                    <a href="#" data-id="75" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp2/azuls.jpg" alt="">
+                        <p>S/.<span>3.554.00</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL REFLECTIVO AZUL ACRILICO - ALTA REFLECTIVIDAD 122CM X 45.7MTS  <br><br>
+                        <span class="product-code">8400-AZ</span>
+                      </p>
+                    <a href="#" data-id="76" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp/vinil-amar.png" alt="">
+                        <p>S/.<span>120.80</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL AMARILLO FOSFORESCENTE  <br><br>
+                        <span class="product-code">1044G</span>
+                      </p>
+                    <a href="#" data-id="77" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp/vinil-amar.png" alt="">
+                        <p>S/.<span>3.554.00</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL REFLECTIVO AMARILLO ACRILICO - ALTA REFLECTIVIDAD 122CM X 45.7MTS  <br><br>
+                        <span class="product-code">8400-A</span>
+                      </p>
+                    <a href="#" data-id="78" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp/vinil-naran.png" alt="">
+                        <p>S/.<span>120.80</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL DE PLOTEO ALTO BRILLO 0.61X45.7M NARANJA 0.08MM  <br><br>
+                        <span class="product-code">1495G</span>
+                      </p>
+                    <a href="#" data-id="79" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp7/TUBO.webp" alt="">
+                        <p>S/.<span>290.77</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL REFLECTIVO ROJO 61CM X 45.7 MTS GRADO INGENIERIA  <br><br>
+                        <span class="product-code">61-45N</span>
+                      </p>
+                    <a href="#" data-id="80" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp7/reflexivo.webp" alt="">
+                        <p>S/.<span>290.80</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL REFLECTIVO ROJO 61CM X 45.7 MTS GRADO INGENIERIA  <br><br>
+                        <span class="product-code">61-45R</span>
+                      </p>
+                    <a href="#" data-id="81" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp4/mohomoho.jpg" alt="">
+                        <p>S/.<span>3.554.00</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL REFLECTIVO ROJO ACRILICO - ALTA REFLECTIVIDAD 122CM X 45.7MTS  <br><br>
+                        <span class="product-code">8400-RI</span>
+                      </p>
+                    <a href="#" data-id="82" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp4/nasa.jpg" alt="">
+                        <p>S/.<span>290.77</span></p>
+                    </div>
+                    <p class="title">
+                        FLECTIVO VERDE 61CM X 45.7 MTS GRADO INGENIERIA  <br><br>
+                        <span class="product-code">61-45V</span>
+                      </p>
+                    <a href="#" data-id="83" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp4/nasa.jpg" alt="">
+                        <p>S/.<span>3.554.00</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL REFLECTIVO VERDE ACRILICO - ALTA REFLECTIVIDAD 122CM X 45.7MT  <br><br>
+                        <span class="product-code">8400-V</span>
+                      </p>
+                    <a href="#" data-id="84" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp3/foca.jpg" alt="">
+                        <p>S/.<span>3.462.00</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL REFLECTIVO VERDE GRADO DIAMANTE PC EGP 122CM X 45.7MTS  <br><br>
+                        <span class="product-code">47-VPC</span>
+                      </p>
+                    <a href="#" data-id="85" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp/vinilblanco.png" alt="">
+                        <p>S/.<span>107.70</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL TRANSPARENTE DE SUBLIMACIÓN 1.20X100MTS  <br><br>
+                        <span class="product-code">DSP90TP</span>
+                      </p>
+                    <a href="#" data-id="86" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp/vinilblanco.png" alt="">
+                        <p>S/.<span>3.554.00</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL REFLECTIVO BLANCO ACRILICO - ALTA REFLECTIVIDAD 122CM X 45.7M  <br><br>
+                        <span class="product-code">8400-B</span>
+                      </p>
+                    <a href="#" data-id="87" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp3/dorado.jpg" alt="">
+                        <p>S/.<span>218.70</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL DE PLOTEO ALTO BRILLO 0.61X50 GOLDEN BRUSHED 0.08MM TIPO METAL  <br><br>
+                        <span class="product-code">3005-OC</span>
+                      </p>
+                    <a href="#" data-id="88" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp6/plat.jpg" alt="">
+                        <p>S/.<span>218.70</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL DE PLOTEO ALTO BRILLO 0.61X50M SILVER BRUSHED 0.08MM TIPO METAL  <br><br>
+                        <span class="product-code">3006-PC</span>
+                      </p>
+                    <a href="#" data-id="89" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp/VINILNEGRO.png" alt="">
+                        <p>S/.<span>323.10</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL FIBRA CARBONO 120G 1.52 X 30M NEGRO 0.12MM 3D  <br><br>
+                        <span class="product-code">QD1201</span>
+                      </p>
+                    <a href="#" data-id="90" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp/VINILNEGRO.png" alt="">
+                        <p>S/.<span>363.80</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL FIBRA CARBONO 120G 1.52 X 30M NEGRO 0.12MM 2D  <br><br>
+                        <span class="product-code">QD1301</span>
+                      </p>
+                    <a href="#" data-id="91" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp/VINILTRANS.png" alt="">
+                        <p>S/.<span>265.90</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL DE IMPRESIÓN AUTOADHESIVO BLANCO 1.27*50M 100MIC 140GM  <br><br>
+                        <span class="product-code">3010M</span>
+                      </p>
+                    <a href="#" data-id="92" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp/VINILSUPERTRANS.png" alt="">
+                        <p>S/.<span>312.10</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL DE IMPRESIÓN AUTOADHESIVO BLANCO 1.52*50M 100MIC 140GM  <br><br>
+                        <span class="product-code">3010L</span>
+                      </p>
+                    <a href="#" data-id="93" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="viniles">
+                    <div>
+                        <img src="img-hp/VINILMEGATRANS.png" alt="">
+                        <p>S/.<span>254.90</span></p>
+                    </div>
+                    <p class="title">
+                        VINIL DE IMPRESIÓN AUTOADHESIVO TRANSPARENTE 1.27*50M 100MIC 120GM  <br><br>
+                        <span class="product-code">3113</span>
+                      </p>
+                    <a href="#" data-id="94" class="btn-add-cart">agregar al carrito</a>
+                </div>
+    
+                <!--TIENDA CARETAS HP-->
+                <div class="carts" data-category="caretas">
+                    <div>
+                        <img src="img-hp2/13.png" alt="">
+                        <p>S/.<span>9.67</span></p>
+                    </div>
+                    <p class="title">
+                        MASCARA PROTECTORA DE TRABAJO AMARILLO COMPLETA  <br><br>
+                        <span class="product-code">13</span>
+                      </p>
+                    <a href="#" data-id="95" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="caretas">
+                    <div>
+                        <img src="img-hp2/barba.jpeg" alt="">
+                        <p>S/.<span>0.66</span></p>
+                    </div>
+                    <p class="title">
+                        BARBIQUEJO PARA CASCO  <br><br>
+                        <span class="product-code">111</span>
+                      </p>
+                    <a href="#" data-id="96" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="caretas">
+                    <div>
+                        <img src="img-hp2/13-t.png" alt="">
+                        <p>S/.<span>4.85</span></p>
+                    </div>
+                    <p class="title">
+                        ADAPTADOR DE CASCO ABS PARA MICA O MALLA  <br><br>
+                        <span class="product-code">13-T</span>
+                      </p>
+                    <a href="#" data-id="97" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="caretas">
+                    <div>
+                        <img src="img-hp2/13-l.png" alt="">
+                        <p>S/.<span>4.52</span></p>
+                    </div>
+                    <p class="title">
+                        MICA DE POLICARBONATO PARA CLIP O CARETA  <br><br>
+                        <span class="product-code">13-L</span>
+                      </p>
+                    <a href="#" data-id="98" class="btn-add-cart">agregar al carrito</a>
+                </div>
+    
+                <!--TIENDA PRODUCTOS ADICIONALES HP-->
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp2/al.jpeg" alt="">
+                        <p>S/.<span>420.00</span></p>
+                    </div>
+                    <p class="title">
+                        ALFOMBRA DE PARED  <br><br>
+                        <span class="product-code">555</span>
+                      </p>
+                    <a href="#" data-id="99" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp6/piso mojado.jpeg" alt="">
+                        <p>S/.<span>10.88</span></p>
+                    </div>
+                    <p class="title">
+                        ALFOMBRA DE PARED  <br><br>
+                        <span class="product-code">PISO-MOJ</span>
+                      </p>
+                    <a href="#" data-id="100" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp3/ducha.jpeg" alt="">
+                        <p>S/.<span>570.77</span></p>
+                    </div>
+                    <p class="title">
+                        DUCHA ELECTRICA COMPLETA <br><br>
+                        <span class="product-code">DUC-ELE</span>
+                      </p>
+                    <a href="#" data-id="101" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp3/FILTRADO.jpg" alt="">
+                        <p>S/.<span>10.77</span></p>
+                    </div>
+                    <p class="title">
+                        FILTRO PARA GASES <br><br>
+                        <span class="product-code">2097</span>
+                      </p>
+                    <a href="#" data-id="102" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp3/FILTRADO.jpg" alt="">
+                        <p>S/.<span>10.77</span></p>
+                    </div>
+                    <p class="title">
+                        FILTRO ANTI-PARTICULAS 2001 COMPATIBLE 7600 ADVANCED <br><br>
+                        <span class="product-code">2001</span>
+                      </p>
+                    <a href="#" data-id="103" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp3/FILTRADO.jpg" alt="">
+                        <p>S/.<span>14.17</span></p>
+                    </div>
+                    <p class="title">
+                        FILTRO ANTI-VAPOR ORGANICO 2007 COMPATIBLE 7600 A <br><br>
+                        <span class="product-code">2007</span>
+                      </p>
+                    <a href="#" data-id="104" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp3/foco.jpeg" alt="">
+                        <p>S/.<span>18.31</span></p>
+                    </div>
+                    <p class="title">
+                        FOCO LED 50 WATT <br><br>
+                        <span class="product-code">FOC-50W</span>
+                      </p>
+                    <a href="#" data-id="105" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp3/gtpp.jpg" alt="">
+                        <p>S/.<span>4.00</span></p>
+                    </div>
+                    <p class="title">
+                        FOTOLUMINICENTE 30X20 STIKER <br><br>
+                        <span class="product-code">AS-CEL-3</span>
+                      </p>
+                    <a href="#" data-id="106" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp5/ore1.jpg" alt="">
+                        <p>S/.<span>19.68</span></p>
+                    </div>
+                    <p class="title">
+                        OREJERA DE SEGURIDAD ADAPTABLE PARA CASCO <br><br>
+                        <span class="product-code">OREJ-PN1</span>
+                      </p>
+                    <a href="#" data-id="107" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp5/ore2.jpg" alt="">
+                        <p>S/.<span>19.68</span></p>
+                    </div>
+                    <p class="title">
+                        OREJERA DE SEGURIDAD SOBRE CABEZA REGULABLE <br><br>
+                        <span class="product-code">OREJ-PN2</span>
+                      </p>
+                    <a href="#" data-id="108" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp6/pisola.jpg" alt="">
+                        <p>S/.<span>5.24</span></p>
+                    </div>
+                    <p class="title">
+                        PISTOLA CALEFACION ESQUELETO <br><br>
+                        <span class="product-code">TR-17550</span>
+                      </p>
+                    <a href="#" data-id="109" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp2/bateria.jpg" alt="">
+                        <p>S/.<span>13.38</span></p>
+                    </div>
+                    <p class="title">
+                        PORTA PLACA METALICA PUMA  <br><br>
+                        <span class="product-code">SF-N30153</span>
+                      </p>
+                    <a href="#" data-id="110" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp4/cili.jpg" alt="">
+                        <p>S/.<span>18.85</span></p>
+                    </div>
+                    <p class="title">
+                        RIBETE REFLECTIVO X 100 MTS  <br><br>
+                        <span class="product-code">RIB-100</span>
+                      </p>
+                    <a href="#" data-id="111" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp7/shisha.jpg" alt="">
+                        <p>S/.<span>123.90</span></p>
+                    </div>
+                    <p class="title">
+                        SHISHA DE PASTILLAS  <br><br>
+                        <span class="product-code">777-P</span>
+                      </p>
+                    <a href="#" data-id="112" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp7/tapones-para-oido.jpeg" alt="">
+                        <p>S/.<span>0.94</span></p>
+                    </div>
+                    <p class="title">
+                        TAPONCITOS DE OIDO EN ESTUCHE RECTANGULAR <br><br>
+                        <span class="product-code">130-CA-R</span>
+                      </p>
+                    <a href="#" data-id="113" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp7/sustrato.jpg" alt="">
+                        <p>S/.<span>258.79</span></p>
+                    </div>
+                    <p class="title">
+                        PANEL DE ALUMINIO 5MM 0,35MM - NEGRO MATE <br><br>
+                        <span class="product-code">SUB-5NM</span>
+                      </p>
+                    <a href="#" data-id="114" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp7/sustrato.jpg" alt="">
+                        <p>S/.<span>197.25</span></p>
+                    </div>
+                    <p class="title">
+                        PANEL DE ALUMINIO 4MM 0,30 MM - NEGRO MATE <br><br>
+                        <span class="product-code">SUB-4NM</span>
+                      </p>
+                    <a href="#" data-id="115" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                <div class="carts" data-category="adicionales">
+                    <div>
+                        <img src="img-hp7/sustrato.jpg" alt="">
+                        <p>S/.<span>152.20</span></p>
+                    </div>
+                    <p class="title">
+                        PANEL DE ALUMINIO 3MM 0,18 MM - NEGRO MATE <br><br>
+                        <span class="product-code">SUB-3NM</span>
+                      </p>
+                    <a href="#" data-id="116" class="btn-add-cart">agregar al carrito</a>
+                </div>
+                
+                
+            </div>
+                
+        </section>
+    
+        <footer>
+            <p class="author">🪐Derechos reservados por <a href="https://github.com/garu2" target="_blank">HP</a></p>
+        </footer>
+    
+        <script>
+            function showCart(x) {
+                document.getElementById("products-id").style.display = "block";
+            }
+    
+            function closeBtn() {
+                document.getElementById("products-id").style.display = "none";
+            }
+            function finalizarPedido() {
+                console.log("Pedido finalizado");
+                window.location.href = 'code.html';
+            }
+            function agregarAlCarrito(productoAgregado) {
+                const nombre = productoAgregado.parentNode.querySelector('.title').textContent;
+                const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                const productoExistente = carrito.find(producto => producto.nombre === nombre);
+    
+                if (productoExistente) {
+                    productoExistente.cantidad += 1;
+                } else {
+                    const precio = parseFloat(productoAgregado.parentNode.querySelector("p span").textContent);
+                    const imagen = productoAgregado.parentNode.querySelector("img").src;
+                    const producto = {
+                        nombre: nombre,
+                        precio: precio,
+                        imagen: imagen,
+                        cantidad: 1
+                    };
+                    carrito.push(producto);
+                }
+    
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+                const botonCompra = document.querySelector('.btn-pagar');
+                botonCompra.href = 'code.html';
+                botonCompra.classList.remove('disabled');
+            }
+    
+            const botonesAgregarCarrito = document.querySelectorAll('.btn-add-cart');
+            botonesAgregarCarrito.forEach(boton => {
+                boton.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    agregarAlCarrito(this);
+                });
+            });
+        </script>
+        <script src="showroom/prod.js"></script>
+          
+
+
+         
+
+
+
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

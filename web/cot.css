@@ -1,0 +1,310 @@
+/* ---- GENERALES ---- */
+* {
+    box-sizing: border-box;
+  }
+  
+  /*body {
+    margin: 0;
+    background: #000;
+    font-family: sans-serif;
+  }*/
+
+  
+  header {
+    background-color: #FC7308;
+    padding: 7px 0;
+    position: fixed; /* Hacer la barra de navegación fija */
+    width: 100%;
+    z-index: 1000; /* Asegurar que la barra de navegación esté encima del contenido */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 200%);
+  }
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  color: #FFFFFF;
+  margin-left: 180px;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin-right: 100px;
+  padding: 12px;
+  display: flex;
+  
+}
+
+.top-nav ul li {
+  margin: 0 15px;
+}
+
+.top-nav ul li span {
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+  display: inline-block;
+  
+}
+
+.top-nav ul li:hover span {
+  border-color: #FFFFFF;
+}
+
+
+
+/* Override link color */
+.top-nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .header-top {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .top-nav {
+      margin-top: 10px;
+      
+  }
+
+  .top-nav ul {
+      flex-direction: column;
+  }
+
+  .top-nav ul li {
+      margin: 5px 0;
+  }
+}
+  
+  .container-icon {
+    background-color: antiquewhite;
+  }
+
+
+  .presentation {
+    text-align: center;
+    padding: 120px;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}
+@media (max-width: 768px) {
+    .presentation {
+        padding: 30px;
+    }
+}
+  .presentation h1 {
+    font-family: 'Nombre de la Fuente', sans-serif; 
+    font-size: 48px;
+    color: black;
+    margin: 0;
+   /* animation: bounce 1s infinite; */
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+  }
+  
+  :root {
+    --cfondo: rgb(17, 16, 16);
+    --cfondoForm1: rgba(232, 242, 243, 0.993);/* a opinion de mst luis gaa el otaku*/
+    --cfondoForm2: rgb(15, 198, 227);
+    --cnegro: red;
+    --ctexto: rgb(14, 81, 88);
+    --ctextoDark: rgb(1, 35, 39);
+    --cblanco: white;
+    --error: rgb(184, 31, 31);
+  }
+  
+  [type="checkbox"] {
+    display: none;
+  }
+  
+  [type="checkbox"]:checked + label::before {
+    background: var(--cnegro);
+    transition: 0.5s;
+    transform: rotate(180deg);
+  }
+  
+  [type="checkbox"]:checked + label {
+    color: var(--cnegro);
+  }
+  
+  /* ---- FORMULARIO ---- */
+
+  .container {
+    /* border: 3px solid red; */
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  /*.form sirve para hacer mas grande y menorar el tamaño del formulario */
+  .form {
+    border-top: 2px solid var(--cnegro);
+    max-width: 450px;
+    padding: 30px 50px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: linear-gradient(
+      0deg,
+      var(--cfondoForm1) 0%,
+      var(--cfondoForm2) 50%
+    );
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px; 
+   
+  }
+  .form:hover {
+    transform: scale(1.02);
+  }
+  /*--------------------------------------------*/
+  
+  .form-titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+  }
+
+  .form-input {
+    margin-bottom: 30px;
+  }
+  
+  .form-input label {
+    display: block;
+    font-size: 15px;
+    /*font-weight: bold;*/
+    margin-bottom: 5px;
+    color: var(--ctexto);
+  }
+  
+  .form-input input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+  .form-input input:focus + label {
+    font-weight: bold;
+    color: var(--cnegro);
+  }
+  
+  .form-termsAndConditions {
+    margin-left: 15px;
+    position: relative;
+    color: var(--ctexto);
+    font-size: 13px;
+  }
+  
+  .form-termsAndConditions label::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--cnegro);
+    position: absolute;
+    left: -14px;
+  }
+  
+  .form-boton input {
+    width: 100%;
+    padding: 10px 50px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-boton input:hover {
+    background-color: black;
+  }
+  .mensajeError {
+    color: var(--error);
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .mensajeCorrecto {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .menu-options {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .menu-options li {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-options li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  @media (max-width: 768px) {
+    .form {
+        padding: 10px;
+    }
+
+    .form-input {
+        margin-bottom: 15px;
+    }
+
+    .form-titulo {
+        font-size: 20px;
+    }
+}
+  
+
+
+
+
+
+
+
+/* Ajusta el tamaño de los elementos de navegación */
+.navbar-nav {
+  font-size: 15px; /* Tamaño de fuente */
+  margin-left: 120px;
+}
+
+/* Ajusta el tamaño de los elementos de navegación y agrega margen derecho */
+.navbar-nav .nav-link {
+  padding: 10px 20px; /* Ajusta el relleno de los elementos */
+  margin-right: 10px; /* Ajusta el margen derecho para separar los elementos */
+  color: #fff !important;
+}
+
+.navbar-toggler .fa-bars {
+  color: black; /* Cambia el color a negro */
+
+}
+
+
+.navbar-nav {
+  margin-right: auto; /* Mueve los elementos a la izquierda */
+}

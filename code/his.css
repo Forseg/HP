@@ -1,0 +1,319 @@
+.contenedor-principal {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: flex-start; 
+}
+
+
+.contenido {
+    flex-basis: 70%;
+    padding: 20px;
+    margin-bottom: -20px; 
+}
+.contenido-adicional {
+    flex-basis: 25%;
+    padding: 20px;
+    margin-bottom: -20px;
+}
+#listaProductos li {
+    margin-left: 10px; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+}
+
+ .producto-img {
+    max-width: 100px; 
+    height: auto; 
+}
+
+header {
+    width: 100%;
+    background-color: #FC7308;
+    padding: 5px 0;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:  0 20px;
+}
+.logo h1 {
+    margin: 0;
+    font-size: 20px; 
+}
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav li {
+   
+    margin-right: 20px; 
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px; 
+}
+.container-icon {
+    background-color: antiquewhite;
+}
+
+.align-left {
+    margin-right: auto;
+    text-align: left; 
+}
+.presentation {
+    background-color: #fff;
+    text-align: center;
+    padding: 90px 0;
+  } 
+  .presentation h1 {
+    font-family: 'Nombre de la Fuente', sans-serif;
+    font-size: 48px; 
+    color: black;
+    margin: 0;
+    animation: bounce 1s infinite; 
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0AD3EB;
+    margin: 0;
+    padding: 0;
+    color: black;
+    animation: pulseBackground 5s infinite; 
+}
+
+.invoice {
+    max-width: 100%; /* Cambiado a 100% para ser responsive */
+    box-sizing: border-box; /* Agregado para incluir el padding en el ancho máximo */
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #AEB6BF;
+    border: 1px solid #AEB6BF;
+    border-radius: 5px;
+    /* animation: pulseForm 27s infinite; */
+}
+
+/* Puedes agregar reglas de estilo específicas para dispositivos móviles aquí */
+
+@media only screen and (min-width: 600px) {
+    .invoice {
+        max-width: 500px; /* Mantén el ancho máximo en dispositivos más grandes */
+        margin-left: auto; /* Ajusta el margen izquierdo para centrar en dispositivos más grandes */
+        margin-right: auto; /* Ajusta el margen derecho para centrar en dispositivos más grandes */
+    }
+}
+
+
+@keyframes pulseBackground {
+    0% {
+        background-color: #AEB6BF    ;
+    }
+    50% {
+        background-color: #AEB6BF ;
+    }
+    100% {
+        background-color: #AEB6BF    ;
+    }
+}
+
+@keyframes pulseForm {
+    0% {
+        background-color: #AEB6BF   ;
+        transform: scale(1);
+    }
+    50% {
+        background-color: #AEB6BF ;
+        transform: scale(0.95);
+    }
+    100% {
+        background-color: #AEB6BF ;
+        transform: scale(1);
+    }
+}
+
+
+/* Estilos generales para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .invoice {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .invoice h1 {
+        font-size: 20px;
+    }
+
+    .invoice table {
+        width: 100%;
+    }
+
+    .invoice th, .invoice td {
+        font-size: 5px;  /*tamaño clase detalle de facturacion  en responsive */
+    }
+
+    .invoice button {
+        font-size: 16px;
+    }
+
+    /* Estilos específicos para el formulario de facturación en dispositivos móviles */
+    #invoice-form {
+        width: 100%;
+    }
+
+    #invoice-form label {
+        font-size: 14px;
+    }
+
+    #invoice-form input,
+    #invoice-form select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .venta-buttons h2 {
+        font-size: 16px;
+    }
+
+    .venta-buttons select {
+        width: 100%;
+    }
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+tfoot {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.invoice-total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.invoice-total p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button[type="submit"] {
+    background-color: #0056b3;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; 
+}
+
+button[type="submit"]:hover {
+    background-color: red; 
+}
+
+.campo-vacio {
+    display: none;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Ajusta el tamaño de los elementos de navegación */
+.navbar-nav {
+    font-size: 15px; /* Tamaño de fuente */
+    margin-left: 120px;
+}
+
+/* Ajusta el tamaño de los elementos de navegación y agrega margen derecho */
+.navbar-nav .nav-link {
+    padding: 10px 20px; /* Ajusta el relleno de los elementos */
+    margin-right: 10px; /* Ajusta el margen derecho para separar los elementos */
+    color: #fff !important;
+}
+
+.navbar-toggler .fa-bars {
+    color: black; /* Cambia el color a negro */
+
+}
+
+
+.navbar-nav {
+    margin-right: auto; /* Mueve los elementos a la izquierda */
+}
